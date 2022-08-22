@@ -323,6 +323,9 @@ input[type=radio] {
 
 @media only screen and (max-width: 769px) {
   /* NAVBAR  STARTS HERE*/
+  .hidden-sm {
+    display: none;
+  }
   .logout-icon {
     display: block;
   }
@@ -430,9 +433,6 @@ input[type=radio] {
 }
 @media only screen and (max-width: 415px) {
   /* NAVBAR  STARTS HERE*/
-  .hidden-sm {
-    display: none;
-  }
   .nav-wrapper {
     max-width: calc(100% - 64px);
     margin: auto;
