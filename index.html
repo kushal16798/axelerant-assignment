@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sass/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <header class="header">
+        <div class="out-container">
+            <div class="nav-wrapper">
+                <div class="menu-icons">
+                    <img class="nav-icon"
+                        src="https://alvimurtaza.github.io/Interview-Front-end/images/l0-l1-l2-engineer/hamburger.png"
+                        alt="hamburger menu" name="menu-icon">
+                    <img class="nav-icon"
+                        src="https://alvimurtaza.github.io/Interview-Front-end/images/l0-l1-l2-engineer/close.png"
+                        alt="menu lose icon" name="close-icon">
+                </div>
+                <img src="https://alvimurtaza.github.io/Interview-Front-end/images/l0-l1-l2-engineer/logo.png"
+                    alt="logo" class="logo">
+
+                <nav class="navbar">
+                    <ul class="navbar-list">
+                        <li><a href="#" class="navbar-link">Dashboard</a></li>
+                        <li class="active"><a href="#" class="navbar-link">Account</a></li>
+                        <li><a href="#" class="navbar-link">Help</a></li>
+                        <li><a href="#" class="navbar-link">Logout</a></li>
+                    </ul>
+                </nav>
+                <div class="logout-icon">
+                    <img src="https://alvimurtaza.github.io/Interview-Front-end/images/l0-l1-l2-engineer/logout.png"
+                        alt="logout icon">
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <div class="modal">
+        <div class="modal-container">
+            <img src="https://alvimurtaza.github.io/Interview-Front-end/images/l0-l1-l2-engineer/clap.png" alt="clap icon">
+            <h2>Great Job!</h2>
+            <p>Your configurations have been updated successfully.</p>
+        </div>
+    </div>
+    <section class="account-section">
+        <div class="container">
+            <div class="row">
+                <div class="photo-container">
+                    <img class="profile-photo"
+                        src="https://alvimurtaza.github.io/Interview-Front-end/images/l0-l1-l2-engineer/profile.png"
+                        alt="profile photo">
+
+                </div>
+                <div class="form-container">
+                    <h1>My Account</h1>
+                    <div class="form-container--inner">
+                        <form action="">
+                            <div class="row">
+                                <label class="custom-field one">
+                                    <input type="text" placeholder=" ">
+                                    <span class="placeholder">Name</span>
+                                </label>
+                            </div>
+
+                            <div class="row">
+                                <label class="custom-field two">
+                                    <input type="text" placeholder=" ">
+                                    <span class="placeholder">Mobile</span>
+                                </label>
+                                <label class="custom-field three">
+                                    <input type="text" placeholder=" ">
+                                    <span class="placeholder">Email</span>
+                                </label>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="configuration">
+        <div class="container">
+            <h3>Select Configurations</h3>
+            <div class="options">
+                <div class="radio-container">
+                    <input type="radio" name="radio--option" id="first">
+                    <label for="first">
+                        <div class="label-wrap">
+                            <h4>Manual Configuration</h4>
+                            <p class="configuration-detail">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>                           
+                        </div>                        
+                    </label>                    
+                    <span class="selected"></span>                    
+                </div>
+                <div class="service-text">
+                    <div class="label-wrap">
+                        <h4>Services Access</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed massa leo. Lorem ipsum
+                            dolor sit amet, consectetur adipiscing elit. Praesent eu varius felis. Integer posuere
+                            urna ut mi porta, vel fringilla dolor convallis. Sed laoreet sodales sapien vel
+                            vestibulum. Nulla dictum eros ut efficitur porttitor. Mauris dignissim, lectus sit amet
+                            euismod pretium, ex purus condimentum erat, eu feugiat nisi ipsum ac eros.</p>
+                    </div>
+                </div>
+
+                <div class="radio-container">
+                    <input type="radio" name="radio--option" id="second">
+                    <label for="second">
+                        <div class="label-wrap">
+                            <h4>Semi-auto Configuration</h4>
+                            <p class="configuration-detail">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                        </div>
+                    </label>
+                    <span class="selected"></span>
+                    <img>
+                </div>
+
+                <div class="radio-container">
+                    <input type="radio" name="radio--option" id="third">
+                    <label for="third">
+                        <div class="label-wrap">
+                            <h4>Automatic Configuration</h4>
+                            <p class="configuration-detail">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. </p>
+                        </div>
+                    </label>
+                    <span class="selected"></span>
+                    <img>
+                </div>
+            </div>
+            <div class="button-container">
+                <button class="btn btn-solid show-modal"><img src="https://alvimurtaza.github.io/Interview-Front-end/images/l0-l1-l2-engineer/configure.png" alt="update icon" class="button-icon"> Update Configuration</button>
+                <button class="btn btn-hollow"><img src="https://alvimurtaza.github.io/Interview-Front-end/images/l0-l1-l2-engineer/cancel.png" alt="cancel icon" class="button-icon"> Cancel</button>
+                
+            </div>
+        </div>
+    </section>
+    
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</html>
