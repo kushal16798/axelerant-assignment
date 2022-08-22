@@ -17,14 +17,12 @@ jQuery(document).ready(function(){
     }); 
     jQuery('.show-modal').click(function() {
         jQuery('.modal').fadeIn();
-        jQuery('html').addClass('y-hidden');
         jQuery('.overlay').show();
         jQuery('.modal').addClass('active-modal')
     });    
     jQuery('.overlay').on('click',function(e) {        
         if(jQuery(e.target).closest('.modal').length===0 && jQuery('.modal').hasClass('active-modal')) {
             jQuery('.modal').removeClass('active-modal');
-            jQuery('html').removeClass('y-hidden');
             jQuery('.modal').fadeOut();
             jQuery('.overlay').hide();
         }
